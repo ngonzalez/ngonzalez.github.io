@@ -3,24 +3,17 @@
   <head>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-    <script type="text/javascript" src="https://rawgithub.com/ngonzalez/leaflet-routing-machine/master/dist/leaflet-routing-machine.min.js"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <link rel="stylesheet" href="https://rawgithub.com/ngonzalez/leaflet-routing-machine/master/dist//leaflet-routing-machine.css" />
+    <script type="text/javascript" src="https://rawgithub.com/ngonzalez/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+    <link rel="stylesheet" href="https://rawgithub.com/ngonzalez/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" />
+    <script type="text/javascript" src="http://ngonzalez.github.io/mt/index.min.js"></script>
   </head>
   <body>
-    <div id="map" style="width:800px; height:600px;"></div>
-    <script type="text/javascript">
-      var map = L.map("map").setView(L.latLng(33.415956, -111.834751), 10);
-      L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
-      L.Routing.control({
-        // router: new L.Routing.OSRMv1(),
-        router: new L.Routing.MT(),
-        waypoints: [
-          L.latLng(39.050518,-9.3275496),
-          L.latLng(38.9389824,-9.2197463)
-        ],
-        routeWhileDragging: true
-      }).addTo(map);
-    </script>
+    <select id="transport-modes" style="margin:10px 0;"></select>
+    <div style="clear:both;"></div>
+    <br />
+    <div id="map" style="width:600px; height:400px;"></div>
   </body>
 </html>
