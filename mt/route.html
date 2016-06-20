@@ -14,7 +14,15 @@
       input[type=text], button {
         border-radius: 2px;
         border: 1px solid #DDD;
-        border-style: inset ;
+        border-style: inset;
+        padding: 5px;
+      }
+      label {
+        border-radius: 2px;
+        border: 1px solid #EEE;
+        font-size: 13px;
+        color: #333;
+        background: #DDD;
         padding: 5px;
       }
     </style>
@@ -23,6 +31,7 @@
     <select id="router-mode" style="margin:10px 0;"></select>
     <select id="router-dimension" style="margin:10px 0;"></select>
     <input id="isoline-value" value="1000" type="text" />
+    <label id="dimension-label" for="isoline-value"></label>
     <button id="clear-btn">Clear</button>
     <i class="fa fa-gear fa-spin" id="loading" style="display:none;"></i>
     <div style="clear:both;"></div>
