@@ -7,12 +7,22 @@
     <script type="text/javascript" src="https://rawgit.com/ngonzalez/leaflet-routing-machine/master/dist/leaflet-routing-machine.min.js"></script>
     <link rel="stylesheet" href="https://rawgit.com/ngonzalez/leaflet-routing-machine/master/dist/leaflet-routing-machine.css" />
     <script type="text/javascript" src="https://rawgit.com/ngonzalez/leaflet-routing-machine/master/examples/mt/route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <style type="text/css">
+      input[type=text] {
+        border-radius: 2px;
+        border: 1px solid #DDD;
+        border-style: inset ;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
     <select id="router-mode" style="margin:10px 0;"></select>
     <select id="router-dimension" style="margin:10px 0;"></select>
-    <input id="isoline-value" value="1000" />
+    <input id="isoline-value" value="1000" type="text" />
     <i class="fa fa-gear fa-spin" id="loading" style="display:none;"></i>
     <div style="clear:both;"></div>
     <br />
